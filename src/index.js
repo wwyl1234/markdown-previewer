@@ -6,7 +6,7 @@ import './index.css';
 class MarkdownPreviwerApp extends React.Component {
     render(){
         return (
-            <div id='markdown-preview-app'>
+            <div id='markdown-preview-app' class='container-fluid'>
                 <MarkdownPreviwer />
             </div>
         )
@@ -32,13 +32,14 @@ class MarkdownPreviwer extends React.Component {
     }
 
     render(){
+        let placeHolderText = `Enter markdown here: (Need help? see https://www.markdownguide.org/basic-syntax/)`; 
         return(
-            <div is='markdown-preview'>
-                <div id='editor-container'>
+            <div is='markdown-preview' class='row'>
+                <div id='editor-container' class='col'>
                     <h1>Editor</h1>
-                    <textarea id='editor' placeholder='Enter markdown here:' onChange={this.handleOnChange}></textarea>
+                    <textarea id='editor' placeholder={placeHolderText} onChange={this.handleOnChange}></textarea>
                 </div>
-                <div id='preview-container'>
+                <div id='preview-container' class='col'>
                     <h1>Preview</h1>
                     <div id='preview' dangerouslySetInnerHTML={this.state.output}></div>
                 </div>
