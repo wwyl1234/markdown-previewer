@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AACA,kBACI,UACJ,CAGA,mBACI,WAEJ","file":"main.67d9180b.chunk.css","sourcesContent":["/* Style the editor-container */\n#editor-container {\n    float:left;\n}\n\n/* Style the preview-container */\n#preview-container {\n    float: right;\n    /* border: 0.5em solid black; */\n}"]}
